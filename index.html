@@ -41,13 +41,21 @@
     </div>
 
         <!-- Line Graph -->
+        <section class="traffic">
+            <div class="traffic-header">
         <h3> Traffic </h3>
-        <ul>
-            <li> "Hourly"</li>
-            <li> "Daily"</li>
-            <li> "Weekly"</li>
-            <li> "Monthly"</li>
+        <ul class="traffic-nav">
+            <li class="traffic-nav-link"> "Hourly"</li>
+            <li class="traffic-nav-link"> "Daily"</li>
+            <li class="traffic-nav-link"> "Weekly"</li>
+            <li class="traffic-nav-link"> "Monthly"</li>
         </ul>
+        </div>
+        <div class="widget-container-full">
+            <!-- element line graph will attach to -->
+            <canvas id="traffic-chart"></canvas>
+        </div>
+        </section>
      </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.min.js"></script>
 </body>
