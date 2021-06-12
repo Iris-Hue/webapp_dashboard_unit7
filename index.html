@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>WebApp</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-
-  <link rel="stylesheet" href="css/styles.css" >
-  <link rel="icon" href="img/favicon.png">
+      <title>WebApp</title>
+      <meta charset="UTF-8"/>
+      <meta name="viewport" content="width=device-width,initial-scale=1"/>
+      <link rel="stylesheet" href="css/styles.css">
 </head>
 
         <!-- Header Section -->
 <header>
-    <h1>WebAppTM</h1>
-    <div id="notifications">
+        <h1>WebAppTM</h1>
+        <div id="notifications">
         <img src="svgs/bell.svg" alt="bell icon">
-    </div>
+        </div>
 
-    <div class="vertical-line"></div>
-    <img src="images/member-1.jpg" alt="profile picture">
-    <h3>Student Name</h3>
+        <div class="vertical-line"></div>
+        <img src="images/member-1.jpg" alt="profile picture">
+        <h3>Student Name</h3>
 </header>
 
         <!-- nav bar -->
 <nav>
-
+    <a href="dashboard">
     <a href="#"><img src= "svgs/home.svg" alt= "home icon"></a>
     <a href="#"><img src= "svgs/bar-chart.svg" alt= "bar-chart icon"></a>
     <a href="#"><img src= "svgs/members.svg" alt= "member icon"></a>
@@ -41,9 +39,9 @@
     </div>
 
         <!-- Line Graph -->
-        <section class="traffic">
+<section class="traffic">
             <div class="traffic-header">
-        <h3> Traffic </h3>
+        <h3>Traffic</h3>
         <ul class="traffic-nav">
             <li class="traffic-nav-link"> "Hourly"</li>
             <li class="traffic-nav-link"> "Daily"</li>
@@ -55,7 +53,59 @@
             <!-- element line graph will attach to -->
             <canvas id="traffic-chart"></canvas>
         </div>
-        </section>
+</section>
+
+        <!-- Bar Graph-->
+<section class="daily">
+        <h3>Daily Traffic</h3>
+        <div class="widger-container-half">
+        <!-- element bar graph will attach to -->
+        <canvas id="daily-chart"></canvas>
+        </div>
+</section>
+
+        <!-- Pie Graph -->
+        <section class="doughnut">
+        <h3>Moblie User</h3>
+        <div class="widger-container-half">
+        <!-- element bar graph will attach to -->
+        <canvas id="doughnut-chart"></canvas>
+        </div>
+</section>
+
+    <!-- Social status section -->
+        <h3>SOCIAL STATS</h3>
+        <div class="social-container">
+        <div class="social-image">
+        <!-- inline SVG not inluded for brevity -->
+        </div>
+        <div class="social-text">
+            <p>Facebook</p>
+            <h1>10,320</h1>
+        </div>
+        </div>
+            <div class="social-container">
+            <div class="social-image">
+                <!-- inline SVG not inluded for brevity -->
+        </div>
+        <div class="social-text">
+            <p>Instagram</p>
+            <h1>16,445</h1>
+        </div>
+        </div>
+        </div>
+        <div class="social-container">
+        <div class="social-image">
+        <!-- inline SVG not inluded for brevity -->
+        </div>
+        <div class="social-text">
+        <p>Twitter</p>
+        <h1>22,189</h1>
+    </div>
+</div>
+        <!--  New Members -->
+        
+
      </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.min.js"></script>
 </body>
