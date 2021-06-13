@@ -21,7 +21,7 @@
 
         <!-- nav bar -->
 <nav>
-    <a href="dashboard">
+    <a href="dashboard"></a>
     <a href="#"><img src= "svgs/home.svg" alt= "home icon"></a>
     <a href="#"><img src= "svgs/bar-chart.svg" alt= "bar-chart icon"></a>
     <a href="#"><img src= "svgs/members.svg" alt= "member icon"></a>
@@ -30,7 +30,6 @@
 
         <!-- Main Widget Section -->
 <body>
-     <main>
          <h2> Dashboard</h2>
 
          <!-- Alert Banner -->
@@ -93,7 +92,7 @@
             <h1>16,445</h1>
         </div>
         </div>
-        </div>
+
         <div class="social-container">
         <div class="social-image">
         <!-- inline SVG not inluded for brevity -->
@@ -107,7 +106,7 @@
 <section class="members">
     <h3>New Members</h3>
     <div class="members-container">
-    <img src="images/member-1.jpg"class="profile-image" alt="profile avatar">
+    <img src="images/member-1.jpg" class="profile-image" alt="profile avatar">
     <div class="members-text">
     <p>Victoria Chambers</p>
     <a href="#">victoria.chambers80@example.com</a>
@@ -116,7 +115,7 @@
     </div>
 
     <div class="members-container">
-    <img src="images/member-2.jpg"class="profile-image" alt="profile avatar">
+    <img src="images/member-2.jpg" class="profile-image" alt="profile avatar">
     <div class="members-text">
     <p>Dale Byrd</p>
     <a href="#">dale.byrd52@example.com</a>
@@ -126,7 +125,7 @@
 
 
     <div class="members-container">
-    <img src="images/member-3.jpg"class="profile-image" alt="profile avatar">
+    <img src="images/member-3.jpg" class="profile-image" alt="profile avatar">
     <div class="members-text">
     <p>Dawn Wood</p>
     <a href="#">dawn.wood16@example.com</a>
@@ -135,7 +134,7 @@
     </div>
 
     <div class="members-container">
-    <img src="images/member-4.jpg"class="profile-image" alt="profile avatar">
+    <img src="images/member-4.jpg" class="profile-image" alt="profile avatar">
     <div class="members-text">
     <p>Dan Oliver</p>
     <a href="#">dan.oliver82@example.com</a>
@@ -145,8 +144,71 @@
 
 </section>
 
+        <!-- Recent Activity Starts -->
+<section class="activity">
+    <h3>Recent Activity</h3>
+    <div class="activity-container">
+    <img src="images/member-1.jpg" class="profile-image" alt="profile avatar">
+    <div class="activity-text">
+    <p>Victoria Chambers commented on<strong> WebApp's SEO Tips</strong></p>
+</div>
+    <p>4 hours ago</p>
+    </div>
+    <div class="activity-container">
+    <img src="images/member-2.jpg" class="profile-image" alt="profile avatar">
+    <div class="activity-text">
+    <p>Dale Byrd liked the post<strong> Facebook's Changes for 2021</strong></p>
+</div>
+    <p>5 hours ago</p>
+    </div>
+    <div class="activity-container">
+    <img src="images/member-3.jpg" class="profile-image" alt="profile avatar">
+    <div class="activity-text">
+    <p>Dawn Wood commented<strong> Facebook's Changes for 2021</strong></p>
+    </div>
+    <p>5 hours ago</p>
+    </div>
+    <div class="activity-container">
+    <img src="images/member-4.jpg" class="profile-image" alt="profile avatar">
+    <div class="activity-text">
+    <p>Dan Oliver possted <strong> WebApp's SEO Tips</strong></p>
+    </div>
+    <p>1 day ago</p>
+    </div>
+</section>
 
-     </main>
+<!--  Messaging Section Starts  -->
+<section class= "message">
+    <h3>Message User</h3>
+    <form class="widget-container" action="index.html" method="post">
+    <input type="text" placeholder="Search for user" class="form-field" id="userField">
+    <textarea placeholder="message for user" class="form-area" id="messageField"></textarea>
+        <button class="button-primary" id="send"
+        type="button" name="button"></button>
+    </form>
+</section>
+
+<!--  Settings Section Starts -->
+<section class="settings">
+    <h3>Settings</h3>
+    <!-- custom CSS toggle code -->
+<!-- custom CSS toggle code -->
+<select class="form-field" id="timezone">
+    <option disabled selected>Select a Timezone</option>
+    <option>Eastern</option>
+    <option>Pacific</option>
+    <option>Mountain</option>
+    <option>Newfoundland</option>
+</select>
+<div class="settings-button">
+    <button class="button-primary"type="button" id="save" name="button">Save</button>
+    <button class="button-disabled"type="button" id="cancel" name="button">Cancel</button>
+</div>
+
+</section>
+
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.min.js"></script>
 </body>
 </html>
