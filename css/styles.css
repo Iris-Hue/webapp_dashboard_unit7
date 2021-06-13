@@ -1,9 +1,52 @@
 
 /*//////////////////////////
         Base Styles
+        Mobile View
 /////////////////////////*/
 
+
+
 *{
+    margin:0;
+    padding: 0;
     box-sizing:border-box;
 }
-/*aspectRatio: number;*/ 
+
+body {
+  background-color: #FFFFFF;
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: 'Open Sans Condensed', sans-serif;
+  padding: 1rem 0 1rem 0;
+  margin: 0 auto;
+  width: 95%;
+  color: #0B0B0B;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+
+}
+.header {
+    color: white;
+    background-color: #766EC8;
+}
+#notifications {
+    transform-origin: 50% 50%;
+
+}
+.nav-bar {
+background-color: #4E5180;
+
+}
+
+
+
+
+
+
+
+*{
+    border: 1px solid red:
+}
