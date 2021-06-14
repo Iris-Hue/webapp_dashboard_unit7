@@ -33,22 +33,22 @@ body {
     color: white;
     background-color: #766EC8;
 }
-.bell {
+.svg {
     background-color: red;
     border-radius: 50%;
-    height: 40%;
-    width: 40%;
+    height: 5 rem;
+    width: 5 rem;
 
 .avatar {
-    width: 50 rem;
-    height: 50 rem;
+    width: 5 rem;
+    height: 5 rem;
     border-radius: 50%;
 }
 
-#notifications {
+/*#notifications {
     transform-origin: 50% 50%;
 
-}
+}*/
 .nav-bar {
 background-color: #4E5180;
 
