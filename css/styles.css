@@ -20,6 +20,7 @@ body {
   padding: 1rem 0 1rem 0;
   margin: 0 auto;
   width: 95%;
+  height: 100%
   color: #0B0B0B;
 }
 .grid-container {
@@ -32,6 +33,18 @@ body {
     color: white;
     background-color: #766EC8;
 }
+.bell {
+    background-color: red;
+    border-radius: 50%;
+    height: 40%;
+    width: 40%;
+
+.avatar {
+    width: 50 rem;
+    height: 50 rem;
+    border-radius: 50%;
+}
+
 #notifications {
     transform-origin: 50% 50%;
 
