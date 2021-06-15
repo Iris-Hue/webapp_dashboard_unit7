@@ -3,13 +3,11 @@
         Base Styles
         Mobile View
 /////////////////////////*/
-
-
-
 *{
     margin:0;
     padding: 0;
     box-sizing:border-box;
+    border: 1px solid red;
 }
 
 body {
@@ -17,15 +15,15 @@ body {
   font-size: 18px;
   line-height: 1.5;
   font-family: 'Open Sans Condensed', sans-serif;
-  padding: 0 rem;
+  padding: 0rem;
   margin: 0 auto;
-  width: 100%;
-  height: 100%
+  width: 100vw;
+  height: 100vh;
   color: #0B0B0B;
 }
 .grid-container {
     display: grid;
-    grid-template-columns: 55px 1fr;
+    grid-template-columns: 100%;
     grid-template-rows: auto;
     grid-template-areas: "header" "navigation" "main";
 
@@ -35,6 +33,7 @@ body {
     color: white;
     background-color: #766EC8;
 }
+
 .svg-bell-icon:hover {
     transition: transform .4 ease-out;
 }
@@ -43,13 +42,13 @@ body {
     background-color: red;
     transform-origin: 33.32%;
     border-radius: 50%;
-    height: 1 rem;
-    width: 1 rem;
+    height: 1rem;
+    width: 1rem;
 }
 
 .avatar {
-    width: 5 rem;
-    height: 5 rem;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
 }
 
@@ -64,23 +63,62 @@ body {
 }
 
 .main {
-    display: grid;
     grid-area: main;
 }
+.widget-container-full, .widget-container-half {
+    width:95vw;
 
+}
 
+/*/////////////////////////////////
+        Media Query Starts
+/////////////////////////////////*/
 @media (min-width: 768px) {
     .grid-container {
         grid-template-columns: 55px 1fr;
-        grid-template-areas: "header header"
+        grid-template-areas:
+        "header header"
         "navigation main"
     }
     .main {
+        display: grid;
         grid-template-columns: 50%;
     }
+    .traffic, .social {
+        grid-column: span 2;
+    }
+    .daily, .members, .message {
+        grid-column: 1 / span 1;
+
+    }
+    .mobile, .activity, .settings {
+        grid-column: 2 / span 1;
+
+    }
 }
+@media (min-width: 1024px) {
 
+    .main {
+        grid-template-columns: 1fr;
 
-*{
-    border: 1px solid red:
+    }
+    .traffic, .social {
+        grid-column: 1 / span 2;
+    }
+    .daily, .members, .message {
+        grid-column: 1 / span 1;
+
+    }
+    .mobile, .activity, .settings {
+        grid-column: 2 / span 1;
+
+    }
+    .widget-container-full {
+        width: 90vw;
+
+    }
+    .widget-container-half {
+        width: 45vw
+
+    }
 }
