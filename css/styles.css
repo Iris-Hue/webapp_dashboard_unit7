@@ -11,12 +11,10 @@
 }
 
 body {
-  background-color: #FFFFFF;
+
   font-size: 18px;
   line-height: 1.5;
   font-family: 'Open Sans Condensed', sans-serif;
-  padding: 0rem;
-  margin: 0 auto;
   width: 100vw;
   height: 100vh;
   color: #0B0B0B;
@@ -118,7 +116,7 @@ body {
 
     }
     .widget-container-half {
-        width: 45vw
+        width: 45vw;
 
     }
 }
