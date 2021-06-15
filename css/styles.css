@@ -11,10 +11,10 @@
 }
 
 body {
-
   font-size: 18px;
   line-height: 1.5;
   font-family: 'Open Sans Condensed', sans-serif;
+  padding-left: 15px;
   width: 100vw;
   height: 100vh;
   color: #0B0B0B;
@@ -27,7 +27,10 @@ body {
 
 }
 .header {
+    display: flex;
+    justify-content: space-between;
     grid-area: header;
+    padding: .1rem;
     color: white;
     background-color: #766EC8;
 }
@@ -40,13 +43,13 @@ body {
     background-color: red;
     transform-origin: 33.32%;
     border-radius: 50%;
-    height: 1rem;
-    width: 1rem;
+    height: 2rem;
+    width: 2rem;
 }
 
 .avatar {
-    width: 5rem;
-    height: 5rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
 }
 
@@ -55,6 +58,7 @@ body {
 
 }*/
 .nav-bar {
+    display: flex;
     grid-area: navigation;
     background-color: #4E5180;
     padding: 15px;
@@ -82,16 +86,23 @@ body {
         display: grid;
         grid-template-columns: 50%;
     }
-    .traffic, .social {
-        grid-column: span 2;
+    .traffic, .social, .members, .activity, .settings, .message{
+        grid-column: 1 / span 2;
     }
-    .daily, .members, .message {
+    .daily {
         grid-column: 1 / span 1;
 
     }
-    .mobile, .activity, .settings {
+    .mobile, .doughnut {
         grid-column: 2 / span 1;
 
+    }
+    .social {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .social h3 {
+        flex-basis: 100%;
     }
 }
 @media (min-width: 1024px) {
