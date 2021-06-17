@@ -10,18 +10,18 @@
       <link rel="stylesheet" href="css/styles.css">
 </head>
 
-        <!-- Header Section -->
+<!--========Header Section================-->
 <body class="grid-container">
 <header class="header">
-        <h1>WebApp<sup>TM</sup></h1>
+        <h1><strong>Web</strong>App<sup>TM</sup></h1>
         <div id="notifications"></div>
         <img class="svg" src="svgs/bell.svg" alt="bell icon">
         <div class="vertical-line"></div>
         <img class="avatar" src="images/member-1.jpg" alt="profile picture">
-        <h3 id="studentName">Student Name</h3>
+        <h4 id="studentName">Student Name</h4>
 </header>
 
-        <!-- nav bar -->
+<!--=======nav bar=====================-->
 <nav class="nav-bar">
     <a href="dashboard"></a>
     <a  href="#"><img class="svg" src= "svgs/home.svg" alt= "home icon"></a>
@@ -30,14 +30,16 @@
     <a  href="#"><img class="svg" src= "svgs/settings.svg" alt= "settings icon"></a>
 </nav>
 
-        <!-- Main Widget Section -->
-        <!-- Line Graph -->
+<!--======= Main Widget Section========-->
+
 <main class="main">
     <h2> Dashboard</h2>
-    <!-- Alert Banner -->
-<div class="alert" id="alert">
-   <!-- Js will insert alert here-->
-</div>
+
+<!--==========Alert Banner=============-->
+    <div class="alert" id="alert">
+    </div>
+
+<!--=======Line Graph==================-->
 <section class="traffic">
             <div class="traffic-header">
         <h3>Traffic</h3>
@@ -54,31 +56,31 @@
         </div>
 </section>
 
-        <!-- Bar Graph-->
+<!--========== Bar Graph====================-->
 <section class="daily">
         <h3>Daily Traffic</h3>
-        <div class="widger-container-half">
+        <div class="widget-container-half">
         <!-- element bar graph will attach to -->
         <canvas id="daily-chart" width="800" height="400"></canvas>
         </div>
 </section>
 
-        <!-- Pie Graph -->
+<!--==========Pie Graph=======================-->
         <section class="doughnut">
         <h3>Moblie User</h3>
-        <div class="widger-container-half">
+        <div class="widget-container-half">
         <!-- element bar graph will attach to -->
         <canvas id="doughnut-chart"></canvas>
         </div>
 </section>
 
-    <!-- Social status section -->
+<!--==========Social status section==============-->
     <div class="social">
         <h3>SOCIAL STATS</h3>
         <div class="social-container">
 
         <div class="social-image">
-        <!-- inline SVG not inluded for brevity -->
+        <img class="svg" src="svgs/facebook.svg" alt="facebook icon">
         </div>
         <div class="social-text">
             <p>Facebook</p>
@@ -87,7 +89,7 @@
         </div>
             <div class="social-container">
             <div class="social-image">
-                <!-- inline SVG not inluded for brevity -->
+            <img class="svg" src="svgs/instagram.svg" alt="instagram icon">
         </div>
         <div class="social-text">
             <p>Instagram</p>
@@ -97,7 +99,7 @@
 
         <div class="social-container">
         <div class="social-image">
-        <!-- inline SVG not inluded for brevity -->
+        <img class="svg" src="svgs/twitter.svg" alt="twitter icon">
         </div>
         <div class="social-text">
         <p>Twitter</p>
@@ -105,7 +107,7 @@
     </div>
 </div>
 </div>
-        <!--  New Members Starts -->
+<!--====New Members Starts==========================-->
 <section class="members">
     <h3>New Members</h3>
     <div class="members-container">
@@ -147,7 +149,7 @@
 
 </section>
 
-        <!-- Recent Activity Starts -->
+<!--=====Recent Activity Starts=================-->
 <section class="activity">
     <h3>Recent Activity</h3>
     <div class="activity-container">
@@ -180,7 +182,7 @@
     </div>
 </section>
 
-<!--  Messaging Section Starts  -->
+<!--========Messaging Section Starts===============-->
 <section class= "message">
     <h3>Message User</h3>
     <form class="widget-container" action="index.html" method="post">
@@ -191,11 +193,11 @@
     </form>
 </section>
 
-<!--  Settings Section Starts -->
+<!--========Settings Section Starts=================-->
 <section class="settings">
     <h3>Settings</h3>
     <!-- custom CSS toggle code -->
-<!-- custom CSS toggle code -->
+    <!-- custom CSS toggle code -->
 <select class="form-field" id="timezone">
     <option disabled selected>Select a Timezone</option>
     <option>Eastern</option>

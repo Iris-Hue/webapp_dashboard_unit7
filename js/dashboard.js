@@ -4,15 +4,16 @@ const user = document.getElementById("userField");
 const message = document.getElementById("messageField");
 const send = document.getElementById("send");
 
-alertBanner.innerHTML =
-`
+alertBanner.innerHTML = `
 <div class= "alert-banner">
-<p><strong>Alert:</strong> You have <strong>6</strong> overdue tasks to complete</p>
+<p><strong> Alert: </strong> You have <strong> 6 </strong> overdue tasks to complete</p>
 </div>
 <div>
-<p class="alert-banner-close">X</p>
+<p class="alert-banner-close">&times;</p>
 </div>
+
 `
+
 alertBanner.addEventListener('click', e => {
     const element = e.target;
     if (element.classList.contains("alert-banner-close")){
