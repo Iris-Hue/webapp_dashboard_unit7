@@ -99,9 +99,9 @@ h3 {
     display: flex;
     border: 1px solid #919191;
     border-radius: 10%;
-    margin: 5px;
+    margin-bottom: 25px;
     fill: white;
-    max-width: 90%;
+    max-width: 95%;
     padding: 7px;
     background-color: #EFEFEF;
 
@@ -110,28 +110,26 @@ h3 {
 
 .social-image {
     display: flex;
-    background-color: #766EC8;
+    justify-content: center;
+    fill: #766EC8;
     width: 3rem;
     height: 3rem;
-    border-radius: 50%;
-    color: white;
+    border: 50%;
+
 }
-.social-text, p, h1{
+.social-text {
     display: block;
     color: #919191;
-
-
 }
-
-
-
 .main {
     grid-area: main;
     padding: 15px;
 }
-.widget-container-full, .widget-container-half {
+.widget-container-full,  {
     width:95vw;
-
+}
+.widget-container-half {
+    width:95vw;
 }
 
 /*/////////////////////////////////
