@@ -28,18 +28,15 @@ body {
     justify-content: space-between;
     grid-area: header;
     padding: 15px;
+    border: 10px;
     width: 100vw;
     color: white;
     background-color: #766EC8;
 }
-
-.svg:hover {
-    transition: transform .6 ease-out;
-}
 .svg {
     display: block;
     justify-content: space-between;
-    color: white;
+    fill: white;
     margin-top: 35px;
     transform-origin: 33.32%;
     border-radius: 50%;
@@ -56,18 +53,18 @@ body {
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-    /* margin-top: 25px; */
+    margin-top: 25px;
 
 }
 #studentName {
-    display: block;
-    padding: 5px;
+    display: inline-block;
 }
 
 .nav-bar {
     display: flex;
     grid-area: navigation;
     justify-content: space-between;
+    color: white;
     background-color: #4E5180;
     padding: 10px;
 }
@@ -99,19 +96,19 @@ body {
 h3 {
     padding-bottom: 5px;
 }
+
 .social-container {
     display: flex;
     border: 1px solid #919191;
     border-radius: 10%;
-    margin-bottom: 25px;
     fill: white;
-    max-width: 95%;
+    max-width: auto;
     padding: 7px;
+    margin: 10px;
     background-color: #EFEFEF;
 }
 
 .social-image {
-    display: flex;
     justify-content: center;
     fill: #766EC8;
     width: 3rem;
@@ -122,50 +119,109 @@ h3 {
 .social-text {
     display: block;
     color: #919191;
+    border: 0px;
+}
+.colorfont {
+    color: #766EC8;
 }
 .members-container {
-    display: flex;
+    display: block;
+    text-align: center;
 }
 .avatar, .members-text {
     display: block;
-    justify-content: center;
+    align-items: center;
+}
+.activity-container {
+    display: block;
+    text-align: center;
+}
+.message, .settings {
+    border-top: 1px solid #919191;
+    width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 .form-field {
-    display: flex;
     border: 1px solid #919191;
-    border-radius: 10%;
+    border-radius: 20%;
     margin-bottom: 25px;
     fill: white;
-    max-width: 95%;
+    width: 95%;
     padding: 7px;
     background-color: #EFEFEF;
 }
 .form-area {
     display: flex;
     border: 1px solid #919191;
-    border-radius: 10%;
+    border-radius: 20%;
     margin-bottom: 25px;
     fill: white;
-    max-width: 95%;
+    width: 95%;
     padding: 7px;
     background-color: #EFEFEF;
 }
+.button-send {
+    display: block;
+    text-transform: uppercase;
+    background-color: #766EC8;
+    color: white;
+    width: 95%;
+    padding: 7px;
+    margin: 5px;
+    border: 1px solid #919191;
+    border-radius: 20%;
+}
 .button-primary {
     display: inline-block;
+    text-transform: uppercase;
     border: 1px solid #919191;
-    border-radius: 10%;
-    margin-bottom: 25px;
+    border-radius: 20%;
+    margin: 15px;
+    width: 40%;
     padding: 7px;
     background-color: #766EC8;
     color: white;
 }
 .button-disabled {
+    display: inline-block;
+    text-transform: uppercase;
     border: 1px solid #919191;
-    border-radius: 10%;
-    margin-bottom: 25px;
+    border-radius: 20%;
+    margin-left: 10px;
+    width: 40%;
     padding: 7px;
     background-color: darkgray;
     color: white;
+}
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 32px;
+    background-color: #766EC8;
+    border-radius: 30px;
+    border: 2px solid #919191;
+}
+.toggle: after {
+    content: '';
+    postion: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    top: 1px;
+    left: 1px;
+    transition: all 0.5s;
+}
+.checkbox: checked + .toggle::after {
+    left: 49px;
+}
+.checkbox:checked = .toggle {
+    background-color: green;
+}
+.checkbox {
+    display: none;
 }
 
 

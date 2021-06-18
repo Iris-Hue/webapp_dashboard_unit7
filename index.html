@@ -6,7 +6,8 @@
       <meta name="viewport" content="width=device-width,initial-scale=1"/>
       <link rel="stylesheet" href="css/normalize.css">
       <link rel="preconnect" href="https://fonts.gstatic.com">
-     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet
+      <link rel="stylesheet" href="css/toggleswitch.css">
       <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -37,6 +38,15 @@
 
 <!--==========Alert Banner=============-->
     <div class="alert" id="alert">
+        alertBanner.innerHTML =
+        `
+        <div class= "alert-banner">
+        <p><strong> Alert: </strong> You have <strong> 6 </strong> overdue tasks to complete</p>
+        </div>
+        <div>
+        <p class="alert-banner-close">&times;</p>
+        </div>
+        `
     </div>
 
 <!--=======Line Graph==================-->
@@ -61,7 +71,7 @@
         <h3>Daily Traffic</h3>
         <div class="widget-container-half">
         <!-- element bar graph will attach to -->
-        <canvas id="daily-chart" width="800" height="400"></canvas>
+        <canvas id="daily-chart" height="400"></canvas>
         </div>
 </section>
 
@@ -83,7 +93,7 @@
         <img class="svg" src="svgs/facebook.svg" alt="facebook icon">
     </div>
     <div class="social-text">
-            <p>Facebook</p>
+            <p class="colorfont">Facebook</p>
             <h1>10,320</h1>
         </div>
         </div>
@@ -91,17 +101,17 @@
             <div class="social-container">
             <img class="svg" src="svgs/instagram.svg" alt="instagram icon">
             <div class="social-text">
-                <p>Instagram</p>
+                <p class="colorfont">Instagram</p>
                 <h1>16,445</h1>
             </div>
             </div>
 
         <div class="social-container">
+        <img class="svg" src="svgs/twitter.svg" alt="twitter icon">
         <div class="social-image">
-        <img class="svg" src="svgs/twitter.svg" alt="twitter icon
     </div>
         <div class="social-text">
-        <p>Twitter</p>
+        <p class="colorfont">Twitter</p>
         <h1>22,189</h1>
     </div>
 </div>
@@ -120,7 +130,6 @@
     <p>10/15/20</p>
 </div>
     </div>
-
     <div class="members-container">
     <img class="avatar" src="images/member-2.jpg" alt="profile avatar">
     <div class="members-text">
@@ -129,7 +138,6 @@
 </div>
     <p>10/15/20</p>
     </div>
-
 
     <div class="members-container">
     <img class="avatar" src="images/member-3.jpg" alt="profile avatar">
@@ -148,7 +156,6 @@
 </div>
     <p>10/15/20</p>
     </div>
-
 </section>
 
 <!--=====Recent Activity Starts=================-->
@@ -190,16 +197,30 @@
         <form class="widget-container" action="index.html" method="post">
         <input type="text" placeholder="Search for User" class="form-field" id="userField">
         <textarea placeholder="Message for User" class="form-area" id="messageField"></textarea>
-            <button class="button-primary" id="send"
-            type="button" name="button"></button>
+            <button class="button-send" id="send"
+            type="button" name="button">Send</button>
         </form>
 </section>
 
 <!--========Settings Section Starts=================-->
 <section class="settings">
     <h3>Settings</h3>
-    <!-- custom CSS toggle code -->
-    <!-- custom CSS toggle code -->
+<div>
+    <p> Send Email Notifications</p><!-- custom CSS toggle code -->
+    <label for="emailNotifications"></label>
+    <input type="checkbox" id="switch" class="checkbox">
+    <label for="switch" class="toggle">
+        <p> OFF    ON</p>
+</div>
+
+<div>
+    <p> Set Profile to Public</p><!-- custom CSS toggle code -->
+    <label for="publicProfile"></label>
+    <input type="checkbox" id="publicProfile" class="checkbox">
+</div>
+
+
+<label for= "timezone">Timezone</label>
 <select class="form-field" id="timezone">
     <option disabled selected>Select a Timezone</option>
     <option>Eastern</option>
@@ -213,10 +234,7 @@
     <button class="button-disabled" type="button" id="cancel" name="button">Cancel</button>
 </div>
 </section>
-
 </main>
-
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.min.js"></script>
     <script src= "js/chart.js"></script>
