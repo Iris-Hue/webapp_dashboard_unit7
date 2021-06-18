@@ -104,6 +104,7 @@ h3 {
     fill: white;
     max-width: auto;
     padding: 7px;
+    height: 75px;
     margin: 10px;
     background-color: #EFEFEF;
 }
@@ -214,7 +215,7 @@ h3 {
     left: 1px;
     transition: all 0.5s;
 }
-.checkbox: checked + .toggle::after {
+.checkbox:checked + .toggle::after {
     left: 49px;
 }
 .checkbox:checked = .toggle {

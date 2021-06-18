@@ -5,6 +5,8 @@ const message = document.getElementById("messageField");
 const send = document.getElementById("send");
 
 
+
+
 alertBanner.addEventListener('click', e => {
     const element = e.target;
     if (element.classList.contains("alert-banner-close")){
