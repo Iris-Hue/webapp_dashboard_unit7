@@ -105,6 +105,12 @@ sup {
     align-self: center;
     margin-right: 10px;
 }
+.main-header-search, input {
+    height: 50px;
+    background-color: #EFEFEF;
+    border-top: 0;
+    border: 1px solid #919191;
+}
 .social, .members, .activity {
     padding: 15px;
     border-top: 1px solid #919191;
@@ -153,7 +159,7 @@ h3 {
     font-weight: 900;
 }
 
-.members-container {
+.members-container, .activity-container {
     display: block;
     text-align: center;
 }
@@ -168,10 +174,6 @@ h3 {
     border-bottom: 1px solid #919191;
 }
 
-.activity-container {
-    display: block;
-    text-align: center;
-}
 .message, .settings {
     border-top: 1px solid #919191;
     width: 100%;
@@ -222,6 +224,13 @@ h3 {
     background-color: darkgray;
     color: white;
 }
+.settings {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
 .choose-option {
     color: white;
     font-weight: bold;
@@ -236,12 +245,12 @@ h3 {
     border-radius: 30px;
     border: 2px solid #919191;
 }
-.toggle: after {
+.toggle:after {
     content: '';
     position: absolute;
     width: 50px;
     height: 50px;
-    border-radius: 50%;
+    border-radius: 25%;
     background-color: white;
     top: 1px;
     left: 1px;
@@ -251,7 +260,7 @@ h3 {
     left: 49px;
 }
 .checkbox:checked + .toggle {
-    background-color: green;
+    background-color: #766EC8;
 }
 .checkbox {
     display: none;
