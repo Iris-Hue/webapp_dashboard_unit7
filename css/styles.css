@@ -226,46 +226,17 @@ h3 {
 }
 .settings {
     display: block;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
 }
-
-.choose-option {
-    color: white;
-    font-weight: bold;
-
-}
-.toggle {
-    position: relative;
+.switch-light {
     display: inline-block;
-    width: 100px;
-    height: 52px;
-    background-color: #766EC8;
-    border-radius: 30px;
-    border: 2px solid #919191;
 }
-.toggle:after {
-    content: '';
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    border-radius: 25%;
-    background-color: white;
-    top: 1px;
-    left: 1px;
-    transition: all 0.5s;
+.first-toggleswitch {
+    width: 10%;
+    border: 1px solid #919191;
 }
-.checkbox:checked + .toggle::after {
-    left: 49px;
-}
-.checkbox:checked + .toggle {
-    background-color: #766EC8;
-}
-.checkbox {
-    display: none;
-}
+span {
 
+}
 
 .widget-container-full,  {
     width:95vw;
