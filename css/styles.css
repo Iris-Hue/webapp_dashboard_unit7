@@ -280,6 +280,7 @@ h3 {
 }
 span {
     flex-basis: 25%;
+    justify-content: space-between;
 }
 .button-primary {
     display: inline-block;
