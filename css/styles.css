@@ -50,17 +50,26 @@ sup {
     top: -0.9em;
     font-size: small;
 }
+#notifications {
+    position: static;
+
+}
 .bell, .nav-bar svg {
     fill: white;
     width: 2rem;
 }
 .bell:hover {
-    width: 2rem;
+    width: 3rem;
+    height: 3rem;
 }
-.bell .dot {
-    position: relative;
-    left: 100px;
+.dot {
+    position: absolute;
+    width: 10px;
+    heigth: 10px;
+    right: 43px;
     border-radius: 50%;
+    display: inline-block;
+    top: 5px;
 }
 .vertical-line {
     border-left: 1px solid darkgray;
@@ -71,7 +80,7 @@ sup {
     display: inline-block;
 }
 .dropbtn {
-    position: relative;
+    position: absolute;
     background-color: green;
     color: white;
     padding: 5px 10px;
@@ -96,7 +105,7 @@ sup {
     border-radius: 30%;
 }
 .dropdown:hover .dropdown-content {
-    background: gray;
+    background: lightgray;
     display: block;
 }
 .dropdown-content a:hover {
@@ -148,15 +157,13 @@ sup {
     justify-content: space-between;
 }
 .main-header-search {
-    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-self: center;
-    margin-right: 10px;
-}
-.main-header-search, input {
-    height: 50px;
-    background-color: #EFEFEF;
-    border-top: 0;
-    border: 1px solid #919191;
+    margin-top: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 .social, .members, .activity, .message, .settings {
     padding: 15px;
@@ -204,11 +211,13 @@ h3 {
 .colorfont {
     color: #766EC8;
     padding-left: 0 10px;
+    padding-top: 20px;
 }
 .statnumbers {
     font-size: 23px;
     font-weight: 900;
     padding-left: 5px;
+    padding-bottom: 5px;
 }
 
 .members-container, .activity-container {
@@ -268,7 +277,9 @@ h3 {
     width: 100%;
     height: 80%;
     margin: 5px 0;
-    /*border: 1px solid #919191;*/
+}
+span {
+    flex-basis: 25%;
 }
 .button-primary {
     display: inline-block;
