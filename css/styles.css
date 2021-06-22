@@ -8,7 +8,7 @@
     padding: 0;
     box-sizing:border-box;
     font-family: 'Open Sans Condensed', sans-serif;
-    /*border: 1px solid firebrick;*/
+    border: 1px solid firebrick;*/
 }
 
 body {
@@ -59,7 +59,7 @@ sup {
 }
 .bell .dot {
     position: relative;
-    right: 100px;
+    left: 100px;
     border-radius: 50%;
 }
 .vertical-line {
