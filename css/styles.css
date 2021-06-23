@@ -305,27 +305,35 @@ span {
     color: white;
 }
 
-
-.widget-container-full,  {
-    width:95vw;
-}
+/*//////////////////////////////////
+////////widget Settings////////////
+//////////////////////////////////*/
+.widget-container-full,
 .widget-container-half {
-    width:95vw;
+    width: 95vw;
 }
+
 
 /*/////////////////////////////////
-        Media Query Starts
+        Tablet Media Query Starts
 /////////////////////////////////*/
 @media (min-width: 768px) {
     .grid-container {
+        display: grid;
         grid-template-columns: 55px 1fr;
         grid-template-areas:
         "header header"
-        "navigation main"
+        "navigation main";
     }
     .main {
         display: grid;
         grid-template-columns: 50%;
+    }
+    .header {
+        justify-content: flex-end;
+    }
+    h1 {
+        flex-grow: 1;
     }
     .traffic, .social, .members, .activity, .settings, .message{
         grid-column: 1 / span 2;
@@ -345,13 +353,27 @@ span {
     .social h3 {
         flex-basis: 100%;
     }
+.widget-container-full {
+    width: 90vw;
 }
+.widget-container-half {
+    width: 45vw;
+}
+/*/////////////////////////////////////
+/////////media query 1024px////////////
+/////////////////////////////////////*/
 @media (min-width: 1024px) {
 
-    .main
+    .grid-container {
+        display: grid;
+        grid-template-columns: 55px 1fr;
+        grid-template-areas:
+        "header header"
+        "navigation main";
+    }
+    .main {
         display: grid;
         grid-template-columns: 50%;
-
     }
     .traffic, .social {
         grid-column: 1 / span 2;
@@ -365,11 +387,6 @@ span {
 
     }
     .widget-container-full {
-        width: 100vw;
-
-    }
-    .widget-container-half {
-        width: 36vw;
-
+        width: 95vw;
     }
 }
