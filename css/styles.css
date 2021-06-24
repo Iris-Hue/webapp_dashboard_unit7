@@ -240,7 +240,7 @@ h3 {
 .members-text, .activity-text {
     display: block;
     justify-content: center;
-    border-bottom: 1px solid #919191;
+
 
 }
 .members-container:last-child .members-text,
@@ -377,15 +377,21 @@ span {
         padding-right: 5px;
         border: 10px;
         width: 100vw;
+        border-bottom: 1px solid #919191;
     }
-    .members-text, p {
-        display: flex;
-        display: inline;
-        flex-basis: 10%;
+    .avatar {
+        flex-basis: 5%;
+    }
+    .members-text {
+        flex-grow: 2;
+        text-align: left;
+        padding-left: 10px;
     }
     .date {
-        display: flex;
-        flex-basis: 85%;
+        flex-basis: 10%;
+    }
+    .members-container:last-child {
+        border-bottom: none;
     }
 
 .widget-container-full {
