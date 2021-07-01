@@ -14,7 +14,7 @@
 body {
   font-size: 18px;
   line-height: 1.5;
-  height: 100vh;
+  margin: auto;
   color: #0B0B0B;
 }
 .grid-container {
@@ -36,7 +36,6 @@ h1 {
     padding-left: 5px;
     padding-right: 5px;
     border: 10px;
-    width: 100vw;
     color: white;
     background-color: #766EC8;
 }
@@ -69,7 +68,7 @@ sup {
 .dot {
     position: absolute;
     width: 10px;
-    heigth: 10px;
+    height: 10px;
     right: 43px;
     border-radius: 50%;
     display: inline-block;
@@ -152,7 +151,7 @@ sup {
 }
 .alert-banner-close {
     cursor: pointer;
-    font-size: 1..25rem;
+    font-size: 1.25rem;
     font-weight: bold;
 }
 .main {
@@ -223,7 +222,7 @@ h3 {
 }
 .colorfont {
     color: #766EC8;
-    padding-left: 0 10px;
+    padding-left: 10px;
     padding-top: 20px;
 }
 .statnumbers {
@@ -257,6 +256,9 @@ h3 {
     border-bottom: none;
 
 }
+.caret {
+    display: none;
+}
 /*/////////////////////////////////////////////
 /////////form boxes starts////////////////////
 /////////////////////////////////////////////*/
@@ -270,7 +272,7 @@ h3 {
     background-color: #EFEFEF;
 }
 .form-area {
-    heigth: 40px;
+    height: 40px;
 }
 .button-send {
     text-transform: uppercase;
@@ -298,7 +300,7 @@ h3 {
     align-items: center;
     width: 100%;
     height: 80%;
-    margin: 5px 0;*/
+    margin: 5px 0;
 }
 span {
     flex-basis: 25%;
@@ -332,7 +334,6 @@ span {
 //////////////////////////////////*/
 .widget-container-full,
 .widget-container-half {
-    width: 95vw;
 }
 
 
@@ -366,10 +367,10 @@ span {
         justify-content: flex-start;
     }
 
-    .traffic, .social, .members, .activity, .settings, {
+    .traffic, .social, .members, .activity, .settings {
         grid-column: 1 / span 2;
     }
-    .daily,  {
+    .daily {
         grid-column: 1 / span 1;
     }
 
@@ -394,7 +395,6 @@ span {
         padding-left: 5px;
         padding-right: 5px;
         border: 10px;
-        width: 100vw;
         border-bottom: 1px solid #919191;
     }
     .avatar {
@@ -419,7 +419,6 @@ span {
         padding-left: 5px;
         padding-right: 5px;
         border: 10px;
-        width: 100vw;
         border-bottom: 1px solid #919191;
     }
     .avatar {
@@ -435,12 +434,12 @@ span {
         font-size: 20px;
         margin-left: auto;
         border: solid black;
+    }
 
-.widget-container-full {
-    width: 90vw;
-}
+.widget-container-full,
 .widget-container-half {
-    width: 45vw;
+    width: 50%;
+}
 }
 /*/////////////////////////////////////
 /////////media query 1024px////////////
@@ -459,7 +458,7 @@ span {
         grid-template-columns: 50%;
     }
     .combine-memb-activity {
-        diplay: grid;
+        display: grid;
     }
     .traffic, .social {
         grid-column: 1 / span 2;
