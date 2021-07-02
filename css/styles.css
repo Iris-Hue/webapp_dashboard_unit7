@@ -181,6 +181,24 @@ input {
     text-align: right;
 
 }
+.traffic-header {
+    display: flex;
+}
+.traffic-nav {
+    flex-grow: 2;
+    text-align: right;
+    list-style-type: none;
+}
+li {
+    display: inline;
+    flex-basis: 40%;
+    text-align: right;
+    border-radius: 25%;
+    padding: 5px;
+    background-color: #74c69d;
+    color: white;
+
+}
 .social, .members, .activity, .message, .settings {
     padding: 15px;
     border-top: 1px solid #919191;
