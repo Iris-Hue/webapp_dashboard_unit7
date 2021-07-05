@@ -140,7 +140,6 @@ sup {
     background-color: #766EC8;
     border-radius: 10px;
     z-index: 10;
-
     padding: 7px;
     color: white;
 }
@@ -193,16 +192,22 @@ li {
     display: inline;
     flex-basis: 40%;
     text-align: right;
-    border-radius: 25%;
-    padding: 5px;
-    background-color: #74c69d;
-    color: white;
 
+    padding: 5px;
+
+    color: black;
+}
+.active {
+    color: white;
+    background-color: #74c69d;
+    border-radius: 0.55rem;
+    padding: 3px 15px;
+    border: 5px;
 }
 .social, .members, .activity, .message, .settings {
     padding: 15px;
     border-top: 1px solid #919191;
-    width: 100%;
+    min-width: 100%;
 }
 
 h3 {
@@ -213,13 +218,14 @@ h3 {
 ///////////////////////////////////////////*/
 .social-container {
     display: flex;
+    flex-grow: 1;
     flex-direction: row;
     border: 1px solid #919191;
-    border-radius: 10%;
+    border-radius: 0.25rem;
     align-items: center;
     height: 80px;
     margin: 10px;
-    padding: 1px;
+    padding: 10px;
     background-color: #EFEFEF;
 }
 
@@ -228,7 +234,6 @@ h3 {
     align-items: center;
     justify-content: center;
     background: #766EC8;
-    padding: 5px;
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
@@ -236,23 +241,19 @@ h3 {
 }
 .social-image svg {
     fill: white;
-    height: 2rem;
+    height: 1.5rem;
 
 }
 .social-text {
     width: 50%;
-    padding: 5px;
+    text-align: left;
 }
 .colorfont {
     color: #766EC8;
-    padding-left: 10px;
-    padding-top: 20px;
 }
 .statnumbers {
-    font-size: 23px;
-    font-weight: 900;
-    padding-left: 5px;
-    padding-bottom: 5px;
+    font-size: 35px;
+    color: #919191;
 }
 /*//////////////////////////////////////////
 ///////social widget ends///////////////////
@@ -262,6 +263,7 @@ h3 {
     display: block;
     text-align: center;
     border-top: 1px solid #919191;
+
 }
 .members-container:first-child {
     border-top: none;
@@ -321,13 +323,11 @@ h3 {
     padding: 1px;
 }
 
-.switch-light {
+.switch-light .switch-ios {
     display: inline-block;
-    align-items: left;
-    text-align: left;
-    width: 60%;
-    height: 80%;
-    margin: 5px 0;
+    width: 20%;
+    vertical-align: text-bottom;
+    margin-left: 2rem;
 }
 span span {
     flex-basis: 10%;
@@ -414,6 +414,7 @@ span span {
     .social h3 {
         flex-basis: 100%;
     }
+
     .members-container {
         display: flex;
         padding: 10px;
@@ -461,7 +462,7 @@ span span {
         display: block;
         font-size: 20px;
         margin-left: auto;
-        border: 10px solid black;
+        color: black;
     }
 
 .widget-container-full,
@@ -487,6 +488,9 @@ span span {
     }
     .combine-memb-activity {
         display: flex;
+        border-right: 90%;
+    }
+    .vertical-middle-line {
         border-right: 90%;
     }
     .combine-message-settings {
