@@ -291,7 +291,7 @@ h3 {
 .form-field,
 .form-area {
     border: 1px solid #919191;
-    border-radius: 20%;
+    border-radius: 0.25rem;
     margin: 10px;
     width: 85%;
     padding: 10px;
@@ -308,7 +308,7 @@ h3 {
     padding: 10px;
     margin: 10px;
     border: 1px solid #919191;
-    border-radius: 20%;
+    border-radius: 0.25rem;
 }
 /*///////////////////////////////////////
 ////////forms ends//////////////////////
@@ -321,22 +321,22 @@ h3 {
 }
 
 .switch-light {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    display: inline-block;
+    align-items: left;
+    text-align: left;
+    width: 60%;
     height: 80%;
     margin: 5px 0;
 }
-span {
-    flex-basis: 25%;
-    text-align: left;
+span span {
+    flex-basis: 10%;
+    text-align: right;
 }
 .button-primary {
     display: inline-block;
     text-transform: uppercase;
     border: 1px solid #919191;
-    border-radius: 20%;
+    border-radius: 0.25rem;
     margin: 15px;
     width: 40%;
     padding: 7px;
@@ -347,7 +347,7 @@ span {
     display: inline-block;
     text-transform: uppercase;
     border: 1px solid #919191;
-    border-radius: 20%;
+    border-radius: 0.25rem;
     margin-left: 10px;
     width: 40%;
     padding: 7px;
@@ -434,7 +434,8 @@ span {
     .date {
         flex-basis: 10%;
     }
-    .members-container:last-child {
+    .members-container:last-child,
+    .activity-container:last-child {
         border-bottom: none;
     }
     .activity-container {
@@ -459,7 +460,7 @@ span {
         display: block;
         font-size: 20px;
         margin-left: auto;
-        border: solid black;
+        border: 10px solid black;
     }
 
 .widget-container-full,
@@ -484,7 +485,12 @@ span {
         grid-template-columns: 50%;
     }
     .combine-memb-activity {
+        display: flex;
+        border-right: 90%;
+    }
+    .combine-message-settings {
         display: grid;
+        grid-template-columns: 49%;
     }
     .traffic, .social {
         grid-column: 1 / span 2;
