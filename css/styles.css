@@ -459,11 +459,11 @@ span span {
         color: black;
     }
 
-.widget-container-full,
+
 .widget-container-half {
     width: 50%;
 }
-}
+
 /*/////////////////////////////////////
 /////////media query 1024px////////////
 /////////////////////////////////////*/
