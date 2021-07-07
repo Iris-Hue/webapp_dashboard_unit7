@@ -8,7 +8,7 @@
     padding: 0;
     box-sizing:border-box;
     font-family: 'Open Sans Condensed', sans-serif;
-    /*border: 1px solid firebrick;*/
+    border: 1px solid firebrick;
 }
 
 body {
@@ -133,8 +133,7 @@ sup {
     gap: 15px;
 }
 .alert {
-    display: block;
-    transform: translate( 3%, 3%);
+    display: flex;
     background-color: #766EC8;
     border-radius: 10px;
     z-index: 10;
@@ -142,7 +141,7 @@ sup {
     color: white;
 }
 .alert-banner {
-    border-width: 50%;
+    border-width: 70%;
 }
 .alert-banner-close {
     cursor: pointer;
