@@ -274,11 +274,15 @@ h3 {
 .members-text, .activity-text {
     display: block;
     justify-content: center;
+    padding-bottom: 10px;
 }
 .members-container:last-child .members-text,
 .activity-container:last-child .activity-text {
     border-bottom: none;
 
+}
+.date {
+    padding-bottom: 10px;
 }
 .caret {
     display: none;
@@ -303,7 +307,7 @@ h3 {
     text-transform: uppercase;
     background-color: #766EC8;
     color: white;
-    width: 85%;
+    min-width: 95%;
     padding: 10px;
     margin: 10px;
     border: 1px solid #919191;
@@ -345,7 +349,7 @@ span span {
     text-transform: uppercase;
     border: 1px solid #919191;
     border-radius: 0.25rem;
-    margin-left: 10px;
+    margin-left: 25px;
     width: 40%;
     padding: 7px;
     background-color: darkgray;
@@ -361,7 +365,7 @@ span span {
 
 
 /*/////////////////////////////////
-        Tablet Media Query Starts
+        768-Tablet Media Query Starts
 /////////////////////////////////*/
 @media (min-width: 768px) {
     .grid-container {
@@ -389,12 +393,21 @@ span span {
         padding: 5px;
         justify-content: flex-start;
     }
+    .alert-banner-close {
+        margin-left: 20rem;
+    }
+
+    li {
+        display: block;
+        text-align: right;
+    }
 
     .traffic, .social, .members, .activity, .settings {
         grid-column: 1 / span 2;
     }
     .daily {
         grid-column: 1 / span 1;
+        border-right: 1px solid #919191;
     }
 
     .doughnut {
