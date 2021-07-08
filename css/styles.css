@@ -106,6 +106,7 @@ sup {
     border-radius: 0.25rem;
     z-index: 10;
     padding: 7px;
+    margin: 0 0.5rem;
     color: white;
 }
 
@@ -290,14 +291,14 @@ h3 {
 }
 
 .switch-light .switch-ios {
-    display: inline-block;
-    width: 20%;
-    vertical-align: text-bottom;
-    margin-left: 2rem;
+    display: flex;
+
 }
 span span {
+    flex-grow: 2;
+    text-align: left;
     flex-basis: 10%;
-    text-align: right;
+
 }
 .button-primary {
     display: inline-block;
@@ -368,9 +369,12 @@ span span {
     }
 
     li.traffic-nav-link {
-        display: block;
+        flex-grow: 2;
+        text-align: left;
+        flex-basis: 10%;
+        /*display: block;
         padding-top: 15px;
-        margin-right: 25px;
+        margin-right: 25px;*/
     }
 
 .active {
@@ -445,6 +449,7 @@ span span {
     .button-disabled {
         margin-left: 80px;
     }
+}
 
 
 .widget-container-half {
