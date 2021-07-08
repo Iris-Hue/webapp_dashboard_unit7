@@ -53,7 +53,7 @@ sup {
 }
 #notifications-circle {
     position: relative;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .bell, .nav-bar svg {
@@ -61,19 +61,18 @@ sup {
     width: 2rem;
 }
 .bell:hover {
-    width: 3rem;
-    height: 3rem;
-    fill: purple;
+    width: 2rem;
+    height: 2rem;
+    fill: gray;
 }
 #notifications-circle::after {
     position: absolute;
-    width: 15px;
-    height: 15px;
-    left: 25px;
+    width: 10px;
+    height: 10px;
+    left: 35px;
     border-radius: 50%;
-    top: 10px;
     content: " ";
-    background-color: green;
+    background-color: limegreen;
 }
 .vertical-line {
     border-left: 1px solid darkgray;
@@ -156,7 +155,8 @@ input {
 li {
     display: inline;
     flex-basis: 20%;
-    text-align: left;
+    align-self:center;
+    text-align: center;
     color: black;
 }
 .active {
@@ -164,6 +164,7 @@ li {
     background-color: #74c69d;
     border-radius: 0.25rem;
     padding: 3px 5px;
+    margin-left: 10px;
     border: 5px;
 }
 .social, .members, .activity, .message, .settings, .daily,  .doughnut {
@@ -363,15 +364,18 @@ span span {
     }
     .traffic-header {
         display: flex;
-        text-align: right;
+        justify-content: flex-end;
     }
 
-    li {
+    li.traffic-nav-link {
         display: block;
-        margin-top: 5px;
-        flex-basis: 40%;
-        text-align: right;
-        color: black;
+        padding-top: 15px;
+        margin-right: 25px;
+    }
+
+.active {
+    width: auto;
+
 }
     .traffic, .social, .members, .activity, .settings {
         grid-column: 1 / span 2;
