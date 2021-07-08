@@ -53,9 +53,9 @@ sup {
 }
 #notifications-circle {
     position: relative;
-    margin-right: 10px;;
-
+    margin-right: 10px;
 }
+
 .bell, .nav-bar svg {
     fill: white;
     width: 2rem;
@@ -63,6 +63,7 @@ sup {
 .bell:hover {
     width: 3rem;
     height: 3rem;
+    fill: purple;
 }
 #notifications-circle::after {
     position: absolute;
@@ -97,6 +98,7 @@ sup {
     background-color: #4E5180;
     justify-content: center;
     align-items: center;
+    padding: 10px;
     gap: 15px;
 }
 .alert {
@@ -153,15 +155,15 @@ input {
 }
 li {
     display: inline;
-    flex-basis: 40%;
+    flex-basis: 20%;
     text-align: left;
     color: black;
 }
 .active {
     color: white;
     background-color: #74c69d;
-    border-radius: 0.55rem;
-    padding: 3px 15px;
+    border-radius: 0.25rem;
+    padding: 3px 5px;
     border: 5px;
 }
 .social, .members, .activity, .message, .settings, .daily,  .doughnut {
@@ -370,7 +372,7 @@ span span {
         flex-basis: 40%;
         text-align: right;
         color: black;
-    }
+}
     .traffic, .social, .members, .activity, .settings {
         grid-column: 1 / span 2;
     }
@@ -464,8 +466,12 @@ span span {
         display: grid;
         grid-template-columns: 50%;
     }
-.alert-banner-close {
-    margin-left: 30rem;
+    .alert-banner-close {
+        margin-left: 30rem;
+}
+.nav-bar {
+    padding: 25px;
+
 }
     .combine-memb-activity {
         display: flex;

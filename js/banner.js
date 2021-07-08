@@ -7,7 +7,7 @@ const send = document.getElementById("send");
 alertBanner.innerHTML =
 `
 <div class="alert-banner">
-    <p><strong> Alert: </strong> You have <strong> 4 </strong> overdue tasks to complete</p>
+    <p><strong> Alert: </strong> You have <strong> 4 </strong> unread messages.</p>
 </div>
 <div>
     <p class="alert-banner-close">&times;</p>
