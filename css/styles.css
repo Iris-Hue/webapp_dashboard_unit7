@@ -53,6 +53,7 @@ sup {
 }
 #notifications-circle {
     position: relative;
+    margin-right: 10px;;
 
 }
 .bell, .nav-bar svg {
@@ -63,53 +64,19 @@ sup {
     width: 3rem;
     height: 3rem;
 }
-.dot {
+#notifications-circle::after {
     position: absolute;
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    right: 15px;
+    width: 15px;
+    height: 15px;
+    left: 25px;
     border-radius: 50%;
-    top: 5px;
+    top: 10px;
+    content: " ";
+    background-color: green;
 }
 .vertical-line {
     border-left: 1px solid darkgray;
     height: 80px;
-}
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-.dropbtn {
-    position: absolute;
-    background-color: green;
-    color: white;
-    border-radius: 50%;
-    cursor: pointer;
-}
-.dropbtn:hover, .dropbtn:focus {
-    background-color: lightgreen;
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    z-index: 100;
-    padding: 1em;
-    font-weight: 600;
-    text-decoration: none;
-}
-.dropdown-content a {
-    color: white;
-    display: block;
-    padding: 10px 15px;
-    border-radius: 30%;
-}
-.dropdown:hover .dropdown-content {
-    background: lightgray;
-    display: block;
-}
-.dropdown-content a:hover {
-    background-color: lavender;
 }
 
 .avatar-header {
@@ -140,9 +107,7 @@ sup {
     padding: 7px;
     color: white;
 }
-.alert-banner {
-    border-width: 70%;
-}
+
 .alert-banner-close {
     cursor: pointer;
     font-size: 1.25rem;
@@ -161,7 +126,6 @@ h2 {
 .main-header-search {
     flex-direction: row;
     justify-content: space-between;
-    align-self: right;
     margin-left: 5px;
     margin-right: 50px;
 }
@@ -261,7 +225,8 @@ h3 {
     border-top: 1px solid #919191;
 
 }
-.members-container:first-child {
+.members-container:first-of-type,
+.activity-container:first-of-type {
     border-top: none;
 }
 .avatar {
@@ -317,7 +282,7 @@ h3 {
 ////////forms ends//////////////////////
 //////// settings widget starts///////*/
 .settings {
-    display: block;
+    display: inline-block;
     align-items: center;
 }
 
@@ -394,12 +359,18 @@ span span {
     .alert-banner-close {
         margin-left: 20rem;
     }
-
-    li {
-        display: block;
+    .traffic-header {
+        display: flex;
         text-align: right;
     }
 
+    li {
+        display: block;
+        margin-top: 5px;
+        flex-basis: 40%;
+        text-align: right;
+        color: black;
+    }
     .traffic, .social, .members, .activity, .settings {
         grid-column: 1 / span 2;
     }
@@ -425,11 +396,9 @@ span span {
     .members-container {
         display: flex;
         padding: 10px;
-        padding-top: 20px;
         align-items: center;
         padding-left: 5px;
         padding-right: 5px;
-        border: 10px;
         border-bottom: 1px solid #919191;
     }
     .avatar {
@@ -451,7 +420,6 @@ span span {
         display: flex;
         padding: 10px;
         align-items: center;
-        border: 10px;
         border-bottom: 1px solid #919191;
     }
     .avatar {
@@ -476,6 +444,9 @@ span span {
 .widget-container-half {
     width: 50%;
 }
+.combine-memb-activity .widget-container-half {
+    width: 100%;
+}
 
 /*/////////////////////////////////////
 /////////media query 1024px////////////
@@ -493,9 +464,9 @@ span span {
         display: grid;
         grid-template-columns: 50%;
     }
-    /*.activity {
-        border: 1px solid darkgray;
-    }*/
+.alert-banner-close {
+    margin-left: 30rem;
+}
     .combine-memb-activity {
         display: flex;
         border-right: 1px solid darkgray;
@@ -503,14 +474,21 @@ span span {
     .vertical-middle-line {
         border-right: 1px solid darkgray;
     }
+    #timezone {
+        margin-top: 40px;
+    }
+    .settings-button {
+        margin-top: 5px;
+    }
+    .button-disabled {
+        margin-left: 40px;
+    }
 
     .combine-message-settings {
         display: grid;
         grid-template-columns: 50%;
     }
-    .button-disabled {
-        margin-left: 80px;
-    }
+
     .traffic, .social {
         grid-column: 1 / span 2;
     }
