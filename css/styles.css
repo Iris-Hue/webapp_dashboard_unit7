@@ -165,7 +165,6 @@ li {
     background-color: #74c69d;
     border-radius: 2rem;
     padding: 3px 5px;
-    width: 45px;
     margin-left: 10px;
     border: 5px;
 }
@@ -343,9 +342,8 @@ span span {
 /*//////////////////////////////////
 ////////widget Settings////////////
 //////////////////////////////////*/
-.widget-container-full,
-/*.widget-container-half*/ {
-        width: 100%;
+.widget-container-full {
+    width: 100%;
 }
 
 
@@ -392,7 +390,6 @@ span span {
         padding-left: 10px;
         /*justify-content: flex-end;*/
     }
-
 
     li.traffic-nav-link {
         padding: 0.25rem;
@@ -499,11 +496,11 @@ span span {
     }
     .alert-banner-close {
         margin-left: 30rem;
-}
-.nav-bar {
+    }
+    .nav-bar {
     padding: 25px;
 
-}
+    }
     .combine-memb-activity {
         display: flex;
         border-right: 1px solid darkgray;
