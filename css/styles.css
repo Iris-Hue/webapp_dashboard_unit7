@@ -64,6 +64,7 @@ sup {
     width: 2rem;
     height: 2rem;
     fill: gray;
+
 }
 #notifications-circle::after {
     position: absolute;
@@ -135,14 +136,6 @@ h2 {
     display: flex;
     margin: 10px;
 }
-input {
-    flex-basis: 50%;
-    border-color: #919191;
-    border-top: none;
-    background-color: #EFEFEF;
-    flex-grow: 2;
-    text-align: right;
-}
 .traffic-header {
     display: block;
 }
@@ -153,9 +146,16 @@ input {
     margin-bottom: 10px;
     list-style-type: none;
 }
+ul.traffic-nav {
+    text-align: left;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
 li {
     display: inline;
     flex-basis: 20%;
+    padding-right: 8px;
     align-self:center;
     text-align: center;
     color: black;
@@ -165,6 +165,7 @@ li {
     background-color: #74c69d;
     border-radius: 0.25rem;
     padding: 3px 5px;
+    width: 45px;
     margin-left: 10px;
     border: 5px;
 }
@@ -287,19 +288,35 @@ h3 {
 //////// settings widget starts///////*/
 .settings {
     display: inline-block;
-    align-items: center;
+}
+.switch-light strong {
+    margin-left: 20px;
+    border-bottom: 30px;
 }
 
-.switch-light .switch-ios {
-    display: flex;
+.switch-light.switch-ios > span {
+    display: inline-block;
+    width: 25%;
+    vertical-align: text-bottom;
+    margin-left: 2rem;
+    background-color:  #766EC8;
 
+
+}
+label.switch-light.switch-ios {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+input {
+    text-align: left;
 }
 span span {
-    flex-grow: 2;
+    flex-basis: 25%;
     text-align: left;
-    flex-basis: 10%;
 
 }
+
 .button-primary {
     display: inline-block;
     text-transform: uppercase;
@@ -328,6 +345,7 @@ span span {
 //////////////////////////////////*/
 .widget-container-full,
 .widget-container-half {
+
 }
 
 
@@ -372,9 +390,9 @@ span span {
         flex-grow: 2;
         text-align: left;
         flex-basis: 10%;
-        /*display: block;
+        display: block;
         padding-top: 15px;
-        margin-right: 25px;*/
+        margin-right: 25px;
     }
 
 .active {
