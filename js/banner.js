@@ -9,7 +9,7 @@ alertBanner.innerHTML =
 <div class="alert-banner">
     <p><strong> Alert: </strong> You have <strong> 4 </strong> unread messages.</p>
 </div>
-<div>
+<div class= "alert-close-marker">
     <p class="alert-banner-close">&times;</p>
 </div> ` ;
 

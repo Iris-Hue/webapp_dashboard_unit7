@@ -117,6 +117,9 @@ sup {
     margin-left: 1rem;
     font-weight: bold;
 }
+.alert-close-marker { /*margin for the X marker*/
+    margin-left: auto;
+}
 .main {
     grid-area: main;
     display: flex;
@@ -146,12 +149,7 @@ h2 {
     margin-bottom: 10px;
     list-style-type: none;
 }
-ul.traffic-nav {
-    text-align: left;
-    margin-bottom: 25px;
-    margin-top: 10px;
-    margin-left: 15px;
-}
+
 li {
     display: inline;
     flex-basis: 20%;
@@ -164,7 +162,6 @@ li {
     color: white;
     background-color: #74c69d;
     border-radius: 2rem;
-    padding: 3px 5px;
     margin-left: 10px;
     border: 5px;
 }
@@ -297,15 +294,14 @@ h3 {
     display: inline-block;
     width: 25%;
     vertical-align: text-bottom;
-    margin-left: 2rem;
+    margin-left: auto;
     background-color:  #766EC8;
-
-
 }
 label.switch-light.switch-ios {
     display: flex;
     align-items: center;
     flex-grow: 1;
+    margin-bottom: 1rem;
 }
 input {
     text-align: left;
@@ -379,16 +375,13 @@ span span {
     .alert-banner-close {
         margin-left: 20rem;
     }
-     h3 {
-        flex-basis: 5%;
-    }
+
     .traffic-header {
         display: flex;
-        /*flex-basis: 10%;*/
         flex-grow: 2;
         text-align: left;
         padding-left: 10px;
-        /*justify-content: flex-end;*/
+        justify-content: space-between;
     }
 
     li.traffic-nav-link {
@@ -468,7 +461,7 @@ span span {
     .button-disabled {
         margin-left: 80px;
     }
-}
+
 
 
 .widget-container-half {
@@ -477,7 +470,7 @@ span span {
 .combine-memb-activity .widget-container-half {
     width: 100%;
 }
-
+}
 /*/////////////////////////////////////
 /////////media query 1024px////////////
 /////////////////////////////////////*/
